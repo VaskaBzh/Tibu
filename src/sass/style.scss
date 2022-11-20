@@ -1,7 +1,10 @@
 @import "const";
 @import "mixins";
 @import "fonts";
+@import "settings";
 
-@import "templates/wrapper";
 @import "templates/header";
 @import "templates/footer";
+
+@import "templates/wrapper";
+@import "templates/hero";

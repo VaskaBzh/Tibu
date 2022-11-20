@@ -1,73 +1,166 @@
 @font-face {
-  font-family: CormorantSC;
+  font-family: Ubuntu;
   font-display: swap;
-  src: url("../fonts/CormorantSC-Bold.woff2") format("woff2"), url("../fonts/CormorantSC-Bold.woff1") format("woff1");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: CormorantSC;
-  font-display: swap;
-  src: url("../fonts/CormorantSC-Light.woff2") format("woff2"), url("../fonts/CormorantSC-Light.woff1") format("woff1");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: CormorantSC;
-  font-display: swap;
-  src: url("../fonts/CormorantSC-Medium.woff2") format("woff2"), url("../fonts/CormorantSC-Medium.woff1") format("woff1");
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff1") format("woff1");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: Jura;
+  font-family: Ubuntu;
   font-display: swap;
-  src: url("../fonts/Jura-Bold.woff2") format("woff2"), url("../fonts/Jura-Bold.woff1") format("woff1");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: CormorantSC;
-  font-display: swap;
-  src: url("../fonts/CormorantSC-Regular.woff2") format("woff2"), url("../fonts/CormorantSC-Regular.woff1") format("woff1");
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff1") format("woff1");
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: Jura;
-  font-display: swap;
-  src: url("../fonts/Jura-Light.woff2") format("woff2"), url("../fonts/Jura-Light.woff1") format("woff1");
-  font-weight: 300;
-  font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: CormorantSC;
-  font-display: swap;
-  src: url("../fonts/CormorantSC-SemiBold.woff2") format("woff2"), url("../fonts/CormorantSC-SemiBold.woff1") format("woff1");
-  font-weight: 600;
-  font-style: normal;
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
 }
-@font-face {
-  font-family: Jura;
-  font-display: swap;
-  src: url("../fonts/Jura-Medium.woff2") format("woff2"), url("../fonts/Jura-Medium.woff1") format("woff1");
-  font-weight: 500;
-  font-style: normal;
+
+html {
+  font-family: "Ubuntu", sans-serif;
 }
-@font-face {
-  font-family: Jura;
-  font-display: swap;
-  src: url("../fonts/Jura-SemiBold.woff2") format("woff2"), url("../fonts/Jura-SemiBold.woff1") format("woff1");
-  font-weight: 600;
-  font-style: normal;
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
-@font-face {
-  font-family: Jura;
-  font-display: swap;
-  src: url("../fonts/Jura-Regular.woff2") format("woff2"), url("../fonts/Jura-Regular.woff1") format("woff1");
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header--logo {
+  margin-right: 150px;
+  width: 103px;
+}
+.header__nav {
+  margin-right: 40px;
+}
+.header__nav--link {
   font-weight: 400;
-  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #4C5057;
+  text-decoration: none;
+  margin-right: 50px;
 }
+.header__nav--link:first-child {
+  margin-right: 130px;
+}
+.header__nav--link:last-child {
+  margin-right: 0;
+}
+.header__phone {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #4C5057;
+  text-decoration: none;
+}
+.header__phone--block {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+.header__phone--block:last-child {
+  margin-right: 0;
+}
+.header__phone--img {
+  margin-right: 20px;
+}
+.header__block2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.header__block2--btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #4C5057;
+  padding: 16px 72px 16px 40px;
+  background: none;
+  border: 2px solid #9BA1AB;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 42px;
+  width: 180px;
+}
+.header__block2--btn::before {
+  content: "";
+  position: absolute;
+  background: url("../img/lines.svg") no-repeat center;
+  width: 20px;
+  height: 11px;
+  top: 20px;
+  left: 115px;
+}
+.header__block2--input {
+  max-width: 837px;
+  width: 100%;
+  height: 50px;
+  padding-left: 21px;
+  border: 1px solid #4C5057;
+  border-radius: 15px;
+  margin-right: 40px;
+}
+.header__block2--links {
+  display: flex;
+  text-align: end;
+}
+.header__block2--link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3B3D41;
+  margin-right: 28px;
+}
+.header__block2--link:last-child {
+  margin-right: 0;
+}
+
+.link__block {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 28px;
+}
+.link__block:last-child {
+  margin-right: 0;
+}
+.link--img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 5px;
+}
+
+.geo {
+  position: relative;
+}
+.geo::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon.svg") no-repeat center;
+  width: 18px;
+  height: 24px;
+  left: -32px;
+  top: -3px;
+}
+
 .wrapper {
   width: 1480px;
   margin: 0 auto;
@@ -78,6 +171,52 @@
   }
 }
 
-.header__section {
+.hero {
+  background: #C1BDAD;
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+.hero__block {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__block--info {
+  max-width: 540;
   width: 100%;
+}
+.hero__block--slider {
+  display: flex;
+  align-items: center;
+}
+.hero__title {
+  font-size: 56px;
+  line-height: 60px;
+  color: #0D1321;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+.hero__secondTitle {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #0D1321;
+  max-width: 540px;
+  width: 100%;
+}
+.hero__slider--button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 25px;
+}
+.hero__slider--button:last-child {
+  margin-right: 0;
+  margin-left: 25px;
+}
+.hero__slider--like {
+  position: absolute;
+  right: 52%;
+  top: 80.5%;
 }
