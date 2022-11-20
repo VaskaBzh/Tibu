@@ -1,0 +1,9 @@
+.wrapper {
+  width: 1480px;
+  margin: 0 auto;
+
+  @include xs {
+    width: 0;
+  }
+}
+
