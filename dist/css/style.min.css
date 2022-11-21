@@ -187,6 +187,7 @@ html {
 .hero__block--slider {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .hero__title {
   font-size: 56px;
@@ -217,6 +218,6 @@ html {
 }
 .hero__slider--like {
   position: absolute;
-  right: 52%;
-  top: 78%;
+  left: 62px;
+  bottom: -12px;
 }
