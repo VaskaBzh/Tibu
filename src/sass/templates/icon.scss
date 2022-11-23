@@ -1,0 +1,24 @@
+.icon {
+  height: 24px;
+  width: 24px;
+  fill: $gray;
+
+  &--thin {
+    width: 18px;
+  }
+
+  &--bold {
+    width: 20px;
+    height: 11px;
+  }
+
+  &--small {
+    width: 18px;
+    height: 15px;
+  }
+
+  &--big {
+    height: 28px;
+    width: 28px;
+  }
+}

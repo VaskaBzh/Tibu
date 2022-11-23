@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
-.container{
-  max-width: 1280px;
-  width: 100%;
-  margin: auto;
+a {
+  color: $gray;
+  text-decoration: none;
 }
 html{
   font-family: 'Ubuntu', sans-serif;
+  color: $gray;
+  font-weight: 400;
+  font-size: 16px;
 }

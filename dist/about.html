@@ -8,41 +8,71 @@
     <title>Про нас</title>
 </head>
     <body>
-        <header class="header">
-  <div class="header__block container">
-    <a href="#" class="header--logo"><img src="img/logo.png" alt="logo" class="header__logo"></a>
-    <nav class="header__nav">
-        <a href="#" class="header__nav--link geo">Москва</a>
-        <a href="#" class="header__nav--link">Новости</a>
-        <a href="#" class="header__nav--link">О компании</a>
-        <a href="#" class="header__nav--link">Материалы</a>
-    </nav>
-    <div class="contacts header__contacts">
-      <div class="header__phone--block">
-          <img src="img/phone.svg" class="header__phone--img"></img>
-          <a href="#" class="header__phone">8-885-853-33-00</a>
-      </div>
-      <div class="header__phone--block">
-          <img src="img/phone.svg" class="header__phone--img"></img>
-          <a href="#" class="header__phone">8-885-853-33-00</a>
-      </div>
+        <header class="header section">
+  <div class="container">
+    <div class="row">
+      <a href="#" class="header__logo logo">
+        <img src="img/logo.svg" alt="logo" class="header__logo">
+      </a>
+      <nav class="header__nav nav row">
+          <a href="#" class="nav__link link">
+            <svg class="icon icon--thin">
+              <use xlink:href="img/icons/icons.svg#place"></use>
+            </svg>
+            Москва
+          </a>
+          <a href="#" class="nav__link link">Новости</a>
+          <a href="#" class="nav__link link">О компании</a>
+          <a href="#" class="nav__link link">Материалы</a>
+      </nav>
+      <div class="contacts row">
+  <a href="tel:88858533300" class="contacts__link link">
+    <svg class="icon">
+      <use xlink:href="img/icons/icons.svg#phone"></use>
+    </svg>
+    <span class="contacts__link-text">8-885-853-33-00</span>
+  </a>
+  <a href="tel:88858533300" class="contacts__link link">
+    <svg class="icon">
+      <use xlink:href="img/icons/icons.svg#phone"></use>
+    </svg>
+    <span class="contacts__link-text">8-885-853-33-00</span>
+  </a>
+</div>  
     </div>
+    <div class="row">
+      <button class="button button--ghost catalog">
+  Каталог 
+  <svg class="icon icon--bold">
+    <use xlink:href="img/icons/icons.svg#lines"></use>
+  </svg>
+  <div class="catalog__list">
+    <span class="catalog__elem">Ремонт в стиле "Вестерн"</span>
+    <span class="catalog__elem">Ремонт в стиле "ХайТек"</span>
+    <span class="catalog__elem">Ремонт в стиле "Вестерн"</span>
+    <span class="catalog__elem">Ремонт в стиле "ХайТек"</span>
   </div>
-  <div class="header__block2 container">
-    <button class="header__block2--btn">Каталог</button>
-    <input type="text" class="header__block2--input" placeholder="Поиск">
-    <div class="header__block2--links">
-      <div class="link__block">
-        <img src="img/man.svg" alt="#" class="link--img">
-        <a href="#" class="header__block2--link">Войти</a>
-      </div>
-      <div class="link__block">
-        <img src="img/cart.svg" alt="#" class="link--img">
-        <a href="#" class="header__block2--link">Корзина</a>
-      </div>
-      <div class="link__block">
-        <img src="img/chat.svg" alt="#" class="link--img">
-        <a href="#" class="header__block2--link">Чат</a>
+</button>  
+      <input type="text" class="header__block2--input" placeholder="Поиск">
+      <div class="header__block2--links">
+        <div class="link__block">
+          <svg class="icon">
+            <use xlink:href="img/icons/icons.svg#login"></use>
+          </svg>
+          <a href="#" class="text text--xs">Войти</a>
+        </div>
+        <div class="link__block">
+          <svg class="icon">
+            <use xlink:href="img/icons/icons.svg#cart"></use>
+          </svg>
+          <a href="#" class="text text--xs">Корзина</a>
+        </div>
+        <div class="link__block">
+          <svg class="icon">
+            <use xlink:href="img/icons/icons.svg#chat"></use>
+          </svg>
+          <a href="#" class="text text--xs">Чат</a>
+        </div>
       </div>
     </div>
   </div>
