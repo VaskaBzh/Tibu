@@ -1,0 +1,21 @@
+.contacts {
+  align-items: center;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 43px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-text {
+      font-size: 18px;
+    }
+
+    .icon {
+      margin-right: 20px;
+    }
+  }
+}

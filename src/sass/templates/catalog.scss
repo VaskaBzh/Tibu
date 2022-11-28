@@ -1,0 +1,41 @@
+.catalog {
+  position: relative;
+  padding: 0 18px;
+
+  &:hover {
+    border-radius: 15px 15px 0 0;
+
+    .catalog {
+      &__list {
+        display: block;
+      }
+    }
+  }
+
+  svg {
+    margin-left: 12px;
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: -2px;
+    width: 180px;
+    background-color: $white;
+    border: 2px solid $grayLight;
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+  }
+
+  &__elem {
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 2px solid $grayLight;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 2px 20px;
+  }
+}

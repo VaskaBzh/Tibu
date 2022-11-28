@@ -1,0 +1,27 @@
+.nav {
+  align-items: center;
+  margin-right: 40px;
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $gray;
+    text-decoration: none;
+    margin-right: 69px;
+    display: inline-flex;
+    align-items: center;
+
+    &:first-child {
+      margin-right: 129px;
+      
+      svg {
+        margin-right: 14px;
+      }
+    }
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

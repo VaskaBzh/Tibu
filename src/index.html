@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-    @@include('html/head.html', {
-        "title": "Tibu"
-    })
-    <body>
-        @@include('html/header.html')
-        <main>
-            <div class="hero">
-                <div class="hero__block container">
-                    <div class="hero__block--info">
-                        <h1 class="hero__title">Тибу для вашего ремонта</h1>
-                        <h2 class="hero__secondTitle">Критический подсчет всего, даже времени. Все для вашего удобства</h2>
-                    </div>
-                    <div class="hero__block--slider">
-                        <button class="hero__slider--button"><img src="img/arrow-left.png" alt="img"></button>
-                        <img src="img/content.png" alt="img" class="hero__slider--content">
-                        <img src="@img/like.png" alt="like" class="hero__slider--like">
-                        <button class="hero__slider--button"><img src="img/arrow-right.png" alt="img"></button>
-                    </div>
-                </div>
-            </div>
-        </main>
-        @@include('html/footer.html')
-        <script src="js/app.min.js"></script>
-    </body>
+<html lang="ru">
+  @@include('html/head.html', {
+  "title": "Tibu"
+  })
+  <body>
+    @@include('html/header.html')
+    <main>
+      <div class="hero">
+        <div class="hero__block container">
+          <div class="hero__block--info">
+            <h1 class="hero__title">Тибу для вашего ремонта</h1>
+            <h2 class="hero__secondTitle">Критический подсчет всего, даже времени. Все для вашего удобства</h2>
+          </div>
+          <div class="hero__block--slider">
+            <button class="hero__slider--button"><img src="img/arrow-left.png" alt="img"></button>
+            <img src="img/content.png" alt="img" class="hero__slider--content">
+            <img src="@img/like.png" alt="like" class="hero__slider--like">
+            <button class="hero__slider--button"><img src="img/arrow-right.png" alt="img"></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html')
+  </body>
 </html>

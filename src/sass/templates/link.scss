@@ -1,0 +1,15 @@
+.link {
+  color: $gray;
+  text-decoration: none;
+  border-radius: 0px;
+  padding: 0;
+  transition: $transition;
+
+  &--underline {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: $black;
+  }
+}
