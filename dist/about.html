@@ -10,9 +10,9 @@
     <body>
         <header class="header section">
   <div class="container">
-    <div class="row">
+    <div class="row header__row">
       <a href="#" class="header__logo logo">
-        <img src="img/logo.svg" alt="logo" class="header__logo">
+        <img src="./img/logo.svg" alt="logo">
       </a>
       <nav class="header__nav nav row">
           <a href="#" class="nav__link link">
@@ -22,26 +22,26 @@
             Москва
           </a>
           <a href="#" class="nav__link link">Новости</a>
-          <a href="#" class="nav__link link">О компании</a>
+          <a href="#" class="nav__link link">Наши проекты</a>
           <a href="#" class="nav__link link">Материалы</a>
       </nav>
-      <div class="contacts row">
+      <div class="contacts row header__contacts">
   <a href="tel:88858533300" class="contacts__link link">
     <svg class="icon">
       <use xlink:href="img/icons/icons.svg#phone"></use>
     </svg>
-    <span class="contacts__link-text">8-885-853-33-00</span>
+    <span class="contacts__link-text text--md">8-885-853-33-00</span>
   </a>
   <a href="tel:88858533300" class="contacts__link link">
     <svg class="icon">
       <use xlink:href="img/icons/icons.svg#phone"></use>
     </svg>
-    <span class="contacts__link-text">8-885-853-33-00</span>
+    <span class="contacts__link-text text--md">8-885-853-33-00</span>
   </a>
 </div>  
     </div>
-    <div class="row">
-      <button class="button button--ghost catalog">
+    <div class="row header__row">
+      <button class="button button--ghost catalog header__catalog">
   Каталог 
   <svg class="icon icon--bold">
     <use xlink:href="img/icons/icons.svg#lines"></use>
@@ -53,27 +53,27 @@
     <span class="catalog__elem">Ремонт в стиле "ХайТек"</span>
   </div>
 </button>  
-      <input type="text" class="header__block2--input" placeholder="Поиск">
-      <div class="header__block2--links">
-        <div class="link__block">
-          <svg class="icon">
-            <use xlink:href="img/icons/icons.svg#login"></use>
-          </svg>
-          <a href="#" class="text text--xs">Войти</a>
-        </div>
-        <div class="link__block">
-          <svg class="icon">
-            <use xlink:href="img/icons/icons.svg#cart"></use>
-          </svg>
-          <a href="#" class="text text--xs">Корзина</a>
-        </div>
-        <div class="link__block">
-          <svg class="icon">
-            <use xlink:href="img/icons/icons.svg#chat"></use>
-          </svg>
-          <a href="#" class="text text--xs">Чат</a>
-        </div>
-      </div>
+      <input type="text" class="input input--search header__input--search" placeholder="Поиск">
+      <div class="links row header__links">
+  <div class="links__block">
+    <svg class="icon icon--big">
+      <use xlink:href="img/icons/icons.svg#login"></use>
+    </svg>
+    <a href="#" class="text text--xs">Войти</a>
+  </div>
+  <div class="links__block">
+    <svg class="icon icon--big">
+      <use xlink:href="img/icons/icons.svg#cart"></use>
+    </svg>
+    <a href="#" class="text text--xs">Корзина</a>
+  </div>
+  <div class="links__block">
+    <svg class="icon icon--big">
+      <use xlink:href="img/icons/icons.svg#chat"></use>
+    </svg>
+    <a href="#" class="text text--xs">Чат</a>
+  </div>
+</div>  
     </div>
   </div>
 </header>

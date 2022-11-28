@@ -1,6 +1,6 @@
 .catalog {
   position: relative;
-  cursor: pointer;
+  padding: 0 18px;
 
   &:hover {
     border-radius: 15px 15px 0 0;
@@ -13,7 +13,7 @@
   }
 
   svg {
-    margin-left: 10px;
+    margin-left: 12px;
   }
 
   &__list {

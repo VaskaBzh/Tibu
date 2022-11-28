@@ -48,7 +48,7 @@ html {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1320px;
   padding: 0 20px;
   width: 100%;
   margin: auto;
@@ -142,6 +142,19 @@ html {
   color: #0D1321;
 }
 
+.links__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 27px;
+}
+.links__block:last-child {
+  margin-right: 0;
+}
+.links__block .icon {
+  margin-bottom: 5px;
+}
+
 .input {
   max-width: 400px;
   width: 100%;
@@ -149,6 +162,9 @@ html {
   border: 1px solid #4C5057;
   border-radius: 15px;
   color: #4C5057;
+  padding: 0 21px;
+  font-size: 18px;
+  line-height: 18px;
 }
 .input::placeholder {
   color: #9BA1AB;
@@ -167,6 +183,7 @@ html {
   line-height: 18px;
   border-radius: 15px;
   height: 50px;
+  cursor: pointer;
 }
 @media (max-width: 767.98px) {
   .button {
@@ -190,16 +207,25 @@ html {
   }
 }
 
+.nav {
+  align-items: center;
+  margin-right: 40px;
+}
 .nav__link {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #4C5057;
   text-decoration: none;
-  margin-right: 50px;
+  margin-right: 69px;
+  display: inline-flex;
+  align-items: center;
 }
 .nav__link:first-child {
-  margin-right: 130px;
+  margin-right: 129px;
+}
+.nav__link:first-child svg {
+  margin-right: 14px;
 }
 .nav__link:last-child {
   margin-right: 0;
@@ -213,17 +239,20 @@ html {
 }
 
 .logo {
-  max-width: 103px;
+  max-width: 104px;
+  height: 65px;
   width: 100%;
+  margin-right: 118px;
 }
-.logo img {
+.logo img,
+.logo svg {
   height: 100%;
   width: 100%;
 }
 
 .catalog {
   position: relative;
-  cursor: pointer;
+  padding: 0 18px;
 }
 .catalog:hover {
   border-radius: 15px 15px 0 0;
@@ -232,7 +261,7 @@ html {
   display: block;
 }
 .catalog svg {
-  margin-left: 10px;
+  margin-left: 12px;
 }
 .catalog__list {
   display: none;
@@ -256,112 +285,47 @@ html {
   padding: 2px 20px;
 }
 
+.contacts {
+  align-items: center;
+}
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 43px;
+}
+.contacts__link:last-child {
+  margin-right: 0;
+}
+.contacts__link-text {
+  font-size: 18px;
+}
+.contacts__link .icon {
+  margin-right: 20px;
+}
+
 .header {
   padding: 20px 0 0;
   margin-bottom: 40px;
 }
-.header__logo {
-  margin-right: 150px;
+.header__row {
+  margin-bottom: 29px;
+}
+.header__row:last-child {
+  margin-bottom: 0;
 }
 .header__nav {
   margin-right: 40px;
+  margin-top: 5px;
 }
-.header__phone {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #4C5057;
-  text-decoration: none;
+.header__contacts {
+  margin-top: 5px;
 }
-.header__phone--block {
-  margin-right: 40px;
-  display: flex;
-  align-items: center;
-}
-.header__phone--block:last-child {
-  margin-right: 0;
-}
-.header__phone--img {
-  margin-right: 20px;
-}
-.header__block2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
-}
-.header__block2--btn {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
-  color: #4C5057;
-  padding: 16px 72px 16px 40px;
-  background: none;
-  border: 2px solid #9BA1AB;
-  border-radius: 15px;
-  position: relative;
-  cursor: pointer;
-  margin-right: 42px;
-  width: 180px;
-}
-.header__block2--btn::before {
-  content: "";
-  position: absolute;
-  background: url("../img/lines.svg") no-repeat center;
-  width: 20px;
-  height: 11px;
-  top: 20px;
-  left: 115px;
-}
-.header__block2--input {
-  max-width: 837px;
-  width: 100%;
-  height: 50px;
-  padding-left: 21px;
-  border: 1px solid #4C5057;
-  border-radius: 15px;
-  margin-right: 40px;
-}
-.header__block2--links {
-  display: flex;
-  text-align: end;
-}
-.header__block2--link {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #3B3D41;
-  margin-right: 28px;
-}
-.header__block2--link:last-child {
-  margin-right: 0;
-}
-
-.link__block {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-right: 28px;
-}
-.link__block:last-child {
-  margin-right: 0;
-}
-.link--img {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 5px;
-}
-
-.geo {
-  position: relative;
+.header__input--search {
+  margin: 0 41px 0 42px;
 }
 
 .hero {
-  background: #C1BDAD;
+  background: #4C5057;
   padding-top: 50px;
   padding-bottom: 65px;
 }
