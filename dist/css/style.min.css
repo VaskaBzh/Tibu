@@ -112,6 +112,15 @@ html {
   width: 24px;
   fill: #4C5057;
 }
+.icon--stroke {
+  fill-opacity: 0;
+  stroke-width: 1.3;
+  stroke: #4C5057;
+}
+.icon--extra-thin {
+  width: 10px;
+  height: 23px;
+}
 .icon--thin {
   width: 18px;
 }
@@ -250,6 +259,17 @@ html {
   width: 100%;
 }
 
+.like {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #4C5057;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .catalog {
   position: relative;
   padding: 0 18px;
@@ -283,6 +303,63 @@ html {
   font-size: 14px;
   line-height: 16px;
   padding: 2px 20px;
+}
+.catalog__elem:last-child {
+  border-bottom: none;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 466px;
+}
+.slider__wrapper {
+  max-width: 100%;
+  width: 100%;
+}
+.slider__wrapper-window {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  align-items: center;
+}
+.slider__wrapper-window::-webkit-scrollbar {
+  height: 0px;
+}
+.slider__slide {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slider__slide .like {
+  position: absolute;
+  left: -15px;
+  bottom: -10px;
+  z-index: 11;
+}
+.slider__slide--active {
+  display: block;
+}
+.slider__button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 2px solid #9BA1AB;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.slider__button--left {
+  left: -75px;
+}
+.slider__button--right {
+  right: -75px;
 }
 
 .contacts {
@@ -329,48 +406,23 @@ html {
   padding-top: 50px;
   padding-bottom: 65px;
 }
-.hero__block {
-  display: flex;
-  justify-content: space-between;
+.hero .container {
+  align-items: flex-start;
 }
-.hero__block--info {
-  max-width: 540;
+.hero__block {
+  max-width: 540px;
+  margin-right: 120px;
   width: 100%;
 }
-.hero__block--slider {
-  display: flex;
-  align-items: center;
-  position: relative;
+.hero__block .title,
+.hero__block .text {
+  color: #fff;
 }
-.hero__title {
-  font-size: 56px;
-  line-height: 60px;
-  color: #0D1321;
-  font-weight: 400;
+.hero__block .title {
   margin-bottom: 75px;
 }
-.hero__secondTitle {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 42px;
-  color: #0D1321;
-  max-width: 540px;
+.hero__slider {
+  max-width: 620px;
   width: 100%;
-}
-.hero__slider--button {
-  width: 50px;
-  height: 50px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-right: 25px;
-}
-.hero__slider--button:last-child {
-  margin-right: 0;
-  margin-left: 25px;
-}
-.hero__slider--like {
-  position: absolute;
-  left: 62px;
-  bottom: -12px;
+  margin-top: 20px;
 }

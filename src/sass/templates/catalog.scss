@@ -37,5 +37,9 @@
     font-size: 14px;
     line-height: 16px;
     padding: 2px 20px;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
