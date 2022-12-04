@@ -1,0 +1,31 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  max-width: 285px;
+  width: 100%;
+  height: 278px;
+  
+
+  .row {
+    margin-bottom: auto;
+    justify-content: flex-end;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    margin-right: 27px;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

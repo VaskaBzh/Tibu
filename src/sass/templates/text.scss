@@ -1,16 +1,28 @@
 .text {
   font-weight: 400;
+  color: $gray;
 
   &__block {
     .text {
       margin-bottom: 20px;
+      line-height: 24px;
 
       &:last-child {
         margin-bottom: 0;
       }
     }
+
+    &--reverce {
+      .text {
+        text-align: right;
+      }
+    }
   }
-      
+
+  &--white {
+    color: $white;
+  }
+ 
   &--no-margin {
     margin-bottom: 0!important;
   }
@@ -38,5 +50,16 @@
   &--large {
     font-size: 36px;
     line-height: 42px;
+  }
+
+  strong {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  span {
+    font-size: 20px;
+    line-height: 24px;
   }
 }

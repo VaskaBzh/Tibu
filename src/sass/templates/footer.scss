@@ -1,3 +1,25 @@
 .footer {
-  
+  background-color: $grayLight;
+  padding: 20px 0;
+  margin: 0;
+
+  &__link {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__contacts {
+    margin-left: auto;
+    
+    .contacts__link {
+      color: $white;
+    }
+
+    .icon {
+      fill: $white;
+    }
+  }
 }

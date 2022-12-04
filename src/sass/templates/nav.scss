@@ -11,17 +11,28 @@
     margin-right: 69px;
     display: inline-flex;
     align-items: center;
+    transition: $transition;
 
     &:first-child {
       margin-right: 129px;
       
       svg {
         margin-right: 14px;
+        transition: $transition;
       }
     }
     
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      color: $black;
+
+      svg {
+        fill: $black;
+        transform: translateY(-5px);
+      }
     }
   }
 }

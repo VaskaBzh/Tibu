@@ -1,0 +1,9 @@
+.about {
+  &__block {
+    margin-right: auto;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

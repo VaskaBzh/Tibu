@@ -1,0 +1,44 @@
+.project {
+  margin-bottom: 13px;
+  padding-bottom: 0;
+
+  &__wrapper {
+    position: relative;
+    min-height: 1051px;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+
+    &--first {
+      z-index: 2;
+    }
+
+    &--second {
+      z-index: 3;
+      right: 0;
+      left: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--third {
+      z-index: 4;
+      bottom: 0;
+      top: auto;
+    }
+
+    &--use {
+      opacity: 0;
+      z-index: 5;
+      transition: .3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

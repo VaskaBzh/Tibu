@@ -1,4 +1,7 @@
 .col {
+  display: flex;
+  flex-direction: column;
+
   &--50 {
     width: calc(50% - 20px);
   }

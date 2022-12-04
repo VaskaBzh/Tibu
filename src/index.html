@@ -6,17 +6,55 @@
   <body>
     @@include('html/header.html')
     <main>
-      <div class="hero section">
+      <section class="hero section">
         <div class="row container">
           <div class="hero__block">
-            <h1 class="title title--h1">Тибу для вашего ремонта</h1>
-            <h2 class="text text--large">Критический подсчет всего, даже времени. Все для вашего удобства</h2>
+            <h1 class="title title--h1 text--white">Тибу для вашего ремонта</h1>
+            <p class="text text--large text--white">Критический подсчет всего, даже времени. Все для вашего удобства</p>
           </div>
           @@include('html/blocks/slider.html', {
             "mod": "hero__slider"
           })
         </div>
-      </div>
+      </section>
+      <!-- /.hero section -->
+      <section class="section about">
+        <div class="container">
+          <h2 class="title title--h2">О компании</h2>
+          <div class="row">
+            <div class="col col--50 about__block">
+              <img src="@img/about-img.png" alt="picture" class="about__img">
+            </div>
+            <div class="col col--50 about__block">
+              <div class="text__block text__block--reverce">
+                <p class="text text--sm text--no-margin"> <span>Строительная компания</span> «<strong>ТИБУ</strong>» – один из лидеров строительной <br> отрасли в Центрально-Черноземном регионе. Визитная карточка компании – <br> скорость и неизменно высокое качество строительства современных жилых <br> объектов.</p>
+                <p class="text text--sm text--no-margin">«ТИБУ» специализируется на возведении объектов недвижимости, а также <br> создании инфраструктуры на их территории. В своей деятельности застройщик <br> использует технологию монолитного и объемно-блочного домостроения. На <br> данный момент суммарный объем возведенной жилой площади в Центрально- <br> Черноземном районе составляет более 1 900 000 кв. м.!</p>
+                <p class="text text--sm">Строительная компания «ТИБУ» основана 10 декабря 1997 года в Воронеже. С <br> этого момента и до сих пор застройщик регулярно отмечается наградами <br> высокого уровня. Среди них – золотой знак «Надежный застройщик», звание <br> «Лучшее предприятие России», множество дипломов конкурса «Строительный Олимп»</p>
+                <p class="text text--sm text--no-margin"> <strong>Миссия компании:</strong>
+                <br>
+                Мы делаем жизнь современной, комфортной, уютной. Мы делаем людей <br> счастливыми. Счастливые люди - Великая страна!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.section about -->
+      @@include('html/info.html')
+      <section class="section project">
+        <div class="container">
+          <div class="project__wrapper">
+            <h2 class="title title--h2 title--reverce">Проекты нашей <br> компании</h2>
+            <img src="@img/project-img--1.png" alt="project__img" class="project__img project__img--first">
+            <img src="@img/project-img--1.png" alt="project__img" class="project__img project__img--use project__img--first">
+            <img src="@img/project-img--2.png" alt="project__img" class="project__img project__img--second">
+            <img src="@img/project-img--2.png" alt="project__img" class="project__img project__img--use project__img--second">
+            <img src="@img/project-img--3.png" alt="project__img" class="project__img project__img--third">
+            <img src="@img/project-img--3.png" alt="project__img" class="project__img project__img--use project__img--third">
+          </div>
+        </div>
+      </section>
+      <!-- /.section project -->
+      @@include('html/feedback.html')
     </main>
     @@include('html/footer.html')
   </body>
