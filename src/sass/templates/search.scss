@@ -1,0 +1,7 @@
+.search {
+  margin-left: 60px;
+
+  @include xxs {
+    margin-left: 30px;
+  }
+}

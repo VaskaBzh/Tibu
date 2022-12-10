@@ -1,0 +1,7 @@
+.phone {
+  margin-left: 30px;
+
+  @include xxs {
+    margin-left: 10px;
+  }
+}

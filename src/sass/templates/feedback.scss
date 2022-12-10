@@ -4,17 +4,61 @@
   margin-bottom: -2px;
   padding: 69px 0 119px;
 
+  @include lg {
+    background-position: top 28px right 90px;
+  }
+
+  @include md {
+    background: $white;
+  }
+
+  @include sm {
+    padding-bottom: 160px;
+  }
+
+  @include xxs {
+    padding-bottom: 275px;
+  }
+
   .container {
     position: relative; 
   }
 
   .title {
     margin-bottom: 80px;
+
+    @include xs {
+      text-align: right;
+    }
+  }
+
+  &__img {
+    @include sm {
+      max-width: 275px;
+    }
+
+    @include xs {
+      max-width: 200px;
+    }
+
+    @include xxs {
+      display: none;
+    }
   }
 
   &__socials {
     position: absolute;
     right: 20px;
     top: 15px;
+
+    @include md {
+      right: 50px;
+      top: 132px;
+    }
+
+    @include xs {
+      right: 20px;
+      top: 100px;
+    }
   }
 }

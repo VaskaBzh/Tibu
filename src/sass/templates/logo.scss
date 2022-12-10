@@ -5,6 +5,16 @@
   margin-right: 118px;
   transition: $transition;
 
+  @include lg {
+    margin-right: 100px;
+  }
+
+  @include md {
+    margin: 0 auto;
+    height: 45px;
+    max-width: 84px;
+  }
+
   &:hover {
     transform: translateX(5px);
   }

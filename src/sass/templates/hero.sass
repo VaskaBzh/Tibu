@@ -1,16 +1,43 @@
 .hero
-    background: $gray
-    padding-top: 50px
-    padding-bottom: 35px
-    .container 
-        align-items: flex-start
-    &__block
-        max-width: 540px
-        margin-right: auto
+  background: $gray
+  padding-top: 50px
+  padding-bottom: 35px
+  @include sm 
+    padding-bottom: 100px
+  .row
+    @include lg
+      flex-direction: column
+  .container 
+    align-items: flex-start
+  &__block
+    max-width: 540px
+    margin-right: auto
+    width: 100%
+    @include lg
+      max-width: 100%
+    .title 
+      margin-bottom: 75px
+      @include lg
+        margin-bottom: 45px
+      @include md 
+        text-align: center
+    .text
+      @include lg
+        margin-bottom: 25px
+      @include md 
+        text-align: center
+  &__slider 
+    max-width: 635px
+    width: 100%
+    margin-top: -11px
+    @include lg
+      margin: 0 auto
+    @include sm 
+      max-width: 80%
+      img 
         width: 100%
-        .title 
-            margin-bottom: 75px
-    &__slider 
-        max-width: 635px
-        width: 100%
-        margin-top: -11px
+        height: 100%
+      .like 
+        display: none
+    @include xs 
+      max-width: 100%

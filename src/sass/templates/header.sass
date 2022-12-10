@@ -1,15 +1,21 @@
 .header
-    padding: 20px 0 0
-    margin-bottom: 40px
-    &__row 
-        margin-bottom: 29px
-        &:last-child
-            margin-bottom: 0
-    &__nav
-        margin-right: 40px
-        margin-top: 5px
-    &__contacts 
-        margin-top: 5px
-    &__input 
-        &--search 
-            margin: 0 41px 0 42px
+  padding: 20px 0 0
+  margin-bottom: 40px
+  @include md
+    display: none
+  &__row 
+    margin-bottom: 29px
+  &:last-child
+    margin-bottom: 0
+  &__nav
+    margin-right: 40px
+    margin-top: 5px
+  &__contacts 
+    margin-top: 5px
+    @include lg 
+      margin-left: auto
+  &__input
+    &--search
+      margin: 0 41px 0 42px
+      @include lg 
+        margin: 0 auto 0 24px

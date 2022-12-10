@@ -1,4 +1,37 @@
 .about {
+  @include md {
+    .row {
+      flex-direction: column;
+    }
+    
+    .col--50 {
+      margin: 0 auto;
+      width: 65%;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    img {
+      border-radius: 15px;
+    }
+  }
+
+  @include xs {
+    .col--50 {
+      width: 100%;
+    }
+
+    img {
+      border-radius: 0 0 15px 15px;
+    }
+  }
+
   &__block {
     margin-right: auto;
 

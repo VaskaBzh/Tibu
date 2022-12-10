@@ -2,9 +2,39 @@
   margin-bottom: 13px;
   padding-bottom: 0;
 
+  @include md {
+    margin-bottom: calc(13px + 75px);
+  }
+
+  @include xs {
+    margin-bottom: calc(13px + 120px);
+  }
+
+  .title {
+    @include xs {
+      text-align: left;
+    }
+  }
+
   &__wrapper {
     position: relative;
     min-height: 1051px;
+
+    @include md {
+      min-height: 800px;
+    }
+
+    @include sm {
+      min-height: 600px;
+    }
+
+    @include xs {
+      min-height: 500px;
+    }
+
+    @include xxs {
+      min-height: 550px;
+    }
   }
 
   &__img {
@@ -12,6 +42,25 @@
     left: 0;
     top: 0;
     cursor: pointer;
+
+    @include md {
+      top: calc(0px + 75px);
+      max-width: 70%;
+    }
+
+    @include sm {
+      max-width: 60%;
+    }
+
+    @include xs {
+      max-width: 400px;
+      top: calc(0px + 120px);
+    }
+
+    @include xxs {
+      max-width: 100%;
+      border-radius: 0 0 15px 15px;
+    }
 
     &--first {
       z-index: 2;
@@ -23,12 +72,28 @@
       left: auto;
       top: 50%;
       transform: translateY(-50%);
+
+      @include md {
+        top: calc(50% + 75px);
+      }
+
+      @include xs {
+        top: calc(50% + 120px);
+      }
     }
 
     &--third {
       z-index: 4;
       bottom: 0;
       top: auto;
+
+      @include md {
+        bottom: calc(0px - 75px);
+      }
+
+      @include xs {
+        bottom: calc(0px - 120px);
+      }
     }
 
     &--use {

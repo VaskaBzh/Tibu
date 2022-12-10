@@ -1,0 +1,9 @@
+.mheader {
+  padding: 20px 0;
+  margin: 0;
+  display: none;
+
+  @include md {
+    display: block;
+  }
+} 
