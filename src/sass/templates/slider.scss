@@ -21,14 +21,19 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
     
     &-window {
       display: flex;
-      justify-content: flex-end;
-      overflow: hidden;
       align-items: center;
       height: 100%;
       width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translateX(14px);
+      transition: $transition;
 
       @include sm {
         justify-content: center;
@@ -42,18 +47,18 @@
   }
 
   &__slide {
-    display: none;
     position: relative;
+    padding-right: 15px;
 
     .like {
       position: absolute;
       left: -15px;
       bottom: -14px;
-      z-index: 11;
+      z-index: 5;
     }
-
-    &--active {
-      display: flex;
+    
+    &-img {
+      border-radius: 15px;
     }
   }
 

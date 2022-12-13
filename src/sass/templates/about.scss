@@ -1,7 +1,17 @@
 .about {
+  .button--gray {
+    display: none;
+  }
+  
   @include md {
     .row {
       flex-direction: column;
+    }
+
+    .button--gray {
+      display: block;
+      margin: 25px auto -25px;
+      border-radius: 15px 15px 0 0;
     }
     
     .col--50 {

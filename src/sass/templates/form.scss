@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    max-width: 100%;
+    margin-bottom: 25px;
+    height: 60px;
+  }
+
+  &__button {
+    height: 60px;
+    width: 100%;
+  }
+  
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 750px;
+
+    @include sm {
+      min-width: 0;
+    }
+  }
+
+  &__radio {
+    width: calc(25% - 20px);
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    min-height: 50px;
+
+    @include sm {
+      width: calc(50% - 20px);
+    }
+
+    .label {
+      font-size: 16px;
+      line-height: 16px;
+      padding-left: 25px;
+      position: relative;
+      user-select: none;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        border: 1px solid $black;
+        transition: $transition;
+      }
+
+      &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 3px;
+        top: 6px;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: $black;
+        opacity: 0;
+        transition: $transition;  
+      }
+
+      &:hover::before {
+        border: 1px solid $grayLight;
+      }
+    }
+
+    .input--radio:checked + .label:after {
+      opacity: 1;
+    }
+  }
+}

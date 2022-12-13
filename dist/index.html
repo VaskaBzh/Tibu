@@ -16,7 +16,7 @@
         <img src="./img/logo.svg" alt="logo">
       </a>
       <nav class="header__nav nav row">
-          <a href="#" class="nav__link link">
+          <a href="place" class="nav__link link popup__link">
             <svg class="icon icon--thin">
               <use xlink:href="img/icons/icons.svg#place"></use>
             </svg>
@@ -58,24 +58,24 @@
 <!-- /.button button--ghost catalog header__catalog -->  
       <input type="text" class="input input--search header__input--search" placeholder="Поиск">
       <div class="links row header__links">
-  <div class="links__block">
+  <a href="login" class="links__block popup__link">
     <svg class="icon icon--big">
       <use xlink:href="img/icons/icons.svg#login"></use>
     </svg>
-    <a href="#" class="text text--xs">Войти</a>
-  </div>
-  <div class="links__block">
+    <span class="text text--xs">Войти</span>
+  </a>
+  <a href="#" class="links__block">
     <svg class="icon icon--big">
       <use xlink:href="img/icons/icons.svg#cart"></use>
     </svg>
-    <a href="#" class="text text--xs">Корзина</a>
-  </div>
-  <div class="links__block">
+    <span class="text text--xs">Корзина</span>
+  </a>
+  <a href="#" class="links__block">
     <svg class="icon icon--big">
       <use xlink:href="img/icons/icons.svg#chat"></use>
     </svg>
-    <a href="#" class="text text--xs">Чат</a>
-  </div>
+    <span class="text text--xs">Чат</span>
+  </a>
 </div>
 <!-- /.slinks header__links -->  
     </div>
@@ -111,24 +111,24 @@
   <div class="container">
     <div class="row">
       <div class="links row mmenu__links">
-  <div class="links__block">
+  <a href="login" class="links__block popup__link">
     <svg class="icon icon--big">
       <use xlink:href="img/icons/icons.svg#login"></use>
     </svg>
-    <a href="#" class="text text--xs">Войти</a>
-  </div>
-  <div class="links__block">
+    <span class="text text--xs">Войти</span>
+  </a>
+  <a href="#" class="links__block">
     <svg class="icon icon--big">
       <use xlink:href="img/icons/icons.svg#cart"></use>
     </svg>
-    <a href="#" class="text text--xs">Корзина</a>
-  </div>
-  <div class="links__block">
+    <span class="text text--xs">Корзина</span>
+  </a>
+  <a href="#" class="links__block">
     <svg class="icon icon--big">
       <use xlink:href="img/icons/icons.svg#chat"></use>
     </svg>
-    <a href="#" class="text text--xs">Чат</a>
-  </div>
+    <span class="text text--xs">Чат</span>
+  </a>
 </div>
 <!-- /.slinks mmenu__links -->  
     </div>
@@ -188,12 +188,12 @@
       <!-- /.hero section -->
       <section class="section about">
         <div class="container">
-          <h2 class="title title--h2">О компании</h2>
+          <h2 class="title title--h2">О компании <button class="button button--gray">Описание</button></h2>
           <div class="row">
             <div class="col col--50 about__block">
               <img src="img/about-img.png" alt="picture" class="about__img">
             </div>
-            <div class="col col--50 about__block">
+            <div class="col col--50 about__block about__block--text">
               <div class="text__block text__block--reverce">
                 <p class="text text--sm text--no-margin"> <span>Строительная компания</span> «<strong>ТИБУ</strong>» – один из лидеров строительной <br> отрасли в Центрально-Черноземном регионе. Визитная карточка компании – <br> скорость и неизменно высокое качество строительства современных жилых <br> объектов.</p>
                 <p class="text text--sm text--no-margin">«ТИБУ» специализируется на возведении объектов недвижимости, а также <br> создании инфраструктуры на их территории. В своей деятельности застройщик <br> использует технологию монолитного и объемно-блочного домостроения. На <br> данный момент суммарный объем возведенной жилой площади в Центрально- <br> Черноземном районе составляет более 1 900 000 кв. м.!</p>
@@ -303,5 +303,78 @@
   </div>
 </footer>
 <!-- /.section footer -->
+    <div class="popup">
+  <div class="popup__wrapper" id="login">
+    <div class="popup__wrap">
+      <div class="popup__close icon">
+        <svg class="icon">
+          <use xlink:href="img/icons/icons.svg#close"></use>
+        </svg>
+      </div>
+      <h2 class="title title--h2 popup__title">Вход|Регистрация</h2>
+      <form action="#" class="form popup__form">
+        <input type="tel" class="input input__phone form__input" placeholder="Введите номер">
+        <button class="button button--gray form__button">Вход</button>
+      </form>
+    </div>
+  </div>
+  <!-- /#login.popup__wrapper -->
+  <div class="popup__wrapper" id="place">
+    <div class="popup__wrap">
+      <div class="popup__close icon">
+        <svg class="icon">
+          <use xlink:href="img/icons/icons.svg#close"></use>
+        </svg>
+      </div>
+      <h2 class="title title--h2 popup__title">Выберите город</h2>
+      <form action="#" class="form popup__form">
+        <div class="form__block">
+          <div class="form__radio">
+            <input id="radio-1" type="radio" name="place" value="Москва" class="input--radio form__input--radio" checked>
+            <label for="radio-1" class="label form__label">Москва</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-2" type="radio" name="place" value="Санкт-Петербург" class="input--radio form__input--radio">
+            <label for="radio-2" class="label form__label">Санкт-Петербург</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-3" type="radio" name="place" value="Тула" class="input--radio form__input--radio">
+            <label for="radio-3" class="label form__label">Тула</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-4" type="radio" name="place" value="Новосибирск" class="input--radio form__input--radio">
+            <label for="radio-4" class="label form__label">Новосибирск</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-5" type="radio" name="place" value="Абхазия" class="input--radio form__input--radio">
+            <label for="radio-5" class="label form__label">Абхазия</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-6" type="radio" name="place" value="Анапа" class="input--radio form__input--radio">
+            <label for="radio-6" class="label form__label">Анапа</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-7" type="radio" name="place" value="Архангельск" class="input--radio form__input--radio">
+            <label for="radio-7" class="label form__label">Архангельск</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-8" type="radio" name="place" value="Белогорск" class="input--radio form__input--radio">
+            <label for="radio-8" class="label form__label">Белогорск</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-9" type="radio" name="place" value="Воронеж" class="input--radio form__input--radio">
+            <label for="radio-9" class="label form__label">Воронеж</label>
+          </div>
+          <div class="form__radio">
+            <input id="radio-10" type="radio" name="place" value="Верея" class="input--radio form__input--radio">
+            <label for="radio-10" class="label form__label">Верея</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- /#place.popup__wrapper -->
+</div>
+<!-- /.popup -->
   </body>
 </html>

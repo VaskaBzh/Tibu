@@ -9,10 +9,12 @@
 @import "templates/title";
 @import "templates/text";
 @import "templates/icon";
+@import "templates/popup";
 @import "templates/link";
 @import "templates/links";
 @import "templates/input";
-@import "templates/button";
+@import "templates/button"; 
+@import "templates/form";
 @import "templates/row";
 @import "templates/col";
 @import "templates/nav";
@@ -35,3 +37,7 @@
 @import "templates/project";
 @import "templates/feedback";
 @import "templates/footer";
+
+@import "templates/active";
+@import "templates/effect";
+@import "templates/body";
